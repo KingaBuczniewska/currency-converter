@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walut</legend>
+            <p>
+                <label>
+                    <span class="form__labelText">Przelicz z* : </span>
+                    <select name="convertFrom" class="form__select js-currency">
+                        <!-- <option value="dolar"> USD </option>
+                        <option value="euro"> EUR </option>
+                        <option value="frank"> CHF </option>
+                        <option value="funt"> GBP </option> -->
+                        <option value="zloty"> PLN </option>
+                    </select>
+                </label>
+                <label>
+                    <input class="form__field js-amount" type="number" min="0.01" step="any" placeholder="Wpisz kwotę"
+                        required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText"> Przelicz na*: </span>
+                    <select name="convertTo" class="form__select js-currencyConvert">
+                        <option value="USD"> USD </option>
+                        <option value="EUR"> EUR </option>
+                        <option value="CHF"> CHF </option>
+                        <option value="GBP"> GBP </option>
+                        <option value="PLN"> PLN </option>
+                    </select>
+                </label>
+                <label>
+                    <input class="form__field js-received" type="number" step="any" placeholder="Otrzymasz" readonly>
+                </label>
+            </p>
+
+        </fieldset>
+    </form>
+
+    <div class="container">
+        <table class="container__table">
+            <caption class="container__title"> Aktualny kurs walut </caption>
+            <thead>
+                <tr class="container__tableRow">
+                    <th class="container__tableCell container__tableCell--header" scope="col">Nazwa waluty
+                    </th>
+                    <th class="container__tableCell container__tableCell--header" scope="col"> Symbol
+                    </th>
+                    <th class="container__tableCell container__tableCell--header" scope="col"> Kurs
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="container__tableRow">
+                    <th class="container__tableCell container__tableCell--header" scope="row"> Dolar amerykański </th>
+                    <td class="container__tableCell"> 1 USD </td>
+                    <td class="container__tableCell"> 3,78 </td>
+                </tr>
+                <tr class="container__tableRow">
+                    <th class="container__tableCell container__tableCell--header" scope="row"> Euro
+                    </th>
+                    <td class="container__tableCell"> 1 EUR</td>
+                    <td class="container__tableCell"> 4,55</td>
+                </tr>
+                <tr class="container__tableRow">
+                    <th class="container__tableCell container__tableCell--header" scope="row"> Frank Szwajcarski </th>
+                    <td class="container__tableCell"> 1 CHF</td>
+                    <td class="container__tableCell"> 4,13</td>
+                </tr>
+                <tr class="container__tableRow">
+                    <th class="container__tableCell container__tableCell--header" scope="row"> Funt szterling</th>
+                    <td class="container__tableCell"> 1 GBP </td>
+                    <td class="container__tableCell"> 5,26</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</body>
+
+</html>

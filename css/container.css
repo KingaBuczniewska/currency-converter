@@ -1,0 +1,38 @@
+.container {
+    overflow-x: auto;
+    margin: 15px;
+}
+
+.container__title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(248, 248, 248);
+    font-weight: 800;
+}
+
+.container__table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 50;
+    display: inline-block;
+}
+
+.container__tableCell {
+    border: 1px solid #f3eaf0;
+    padding: 15px;
+    text-align: center;
+    vertical-align: auto;
+}
+
+.container__tableCell--header {
+    background-color: rgba(140, 168, 190, 0.884);
+    color: black;
+}
+
+.container__tableRow:nth-child(even) {
+    background-color: rgba(66, 176, 190, 0.938);
+}
+
+.container__tableRow:hover {
+    background-color: rgb(104, 211, 184);
+}
