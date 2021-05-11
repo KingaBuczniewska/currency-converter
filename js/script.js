@@ -24,7 +24,7 @@
         }
     };
     const updateReceived = (converted) => {
-        var receivedElement = document.querySelector(".js-received")
+        let receivedElement = document.querySelector(".js-received")
         receivedElement.value = converted;
     }
 
