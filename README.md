@@ -8,16 +8,15 @@ https://kingabuczniewska.github.io/currency-converter/
 * [Screenshot](#screenshot)
 * [Technologies](#technologies)
 
-## General info :mag:
-
+## General info 
 
 Simple currency-converter create by YouCode Student.
 
-## Screenshot :camera:
+## Screenshot 
 
 ![converter](https://github.com/KingaBuczniewska/currency-converter/blob/main/image/Zrzut%20ekranu%20(23).png?raw=true)
 
-## Technologies :computer:
+## Technologies 
 * HTML
 * CSS
 * BEM
